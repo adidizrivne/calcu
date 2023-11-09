@@ -3,7 +3,7 @@
 document.getElementById("calculate").addEventListener("click", function () {
   const hours = parseFloat(document.getElementById("hours").value);
   const rank = parseFloat(document.getElementById("rank").value);
-  const discipline = document.getElementById("discipline").checked ? 0.1 : 1;
+  const discipline = document.getElementById("discipline").checked ? 0.1 : 0;
   const productivity = parseFloat(document.getElementById("productivity").value);
   const nightHours = parseFloat(document.getElementById("nightHours").value);
 
