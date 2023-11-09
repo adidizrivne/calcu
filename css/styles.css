@@ -1,0 +1,109 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff; /* Білий колір фону */
+}
+
+header {
+  background-color: #FF0000; /* Червоний колір заголовка */
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  width: 100%; /* Адаптивна ширина */
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 1000; /* Збільште z-index, щоб він був вище інших елементів */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px; /* Зменшено розмір шрифту */
+}
+
+main {
+  padding: 80px 20px 20px; /* Збільшено верхній відступ, щоб уникнути перекриття контенту заголовком */
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.calculator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: max-content; /* Встановлення ширини на max-content */
+  margin: 0 auto; /* Вирівнювання по центру без зовнішнього відступу */
+  padding: 20px;
+  background-color: #fff;
+  border: 2px solid #FF0000; /* Червоний колір межі */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.calculator h2 {
+  font-size: 24px;
+  color: #FF0000; /* Червоний колір заголовку */
+}
+
+.calculator label {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.calculator input,
+.calculator select,
+.calculator button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 16px;
+  box-sizing: border-box; /* Додайте це для правильного обчислення ширини */
+}
+
+.calculator button {
+  background-color: #FF0000; /* Червоний колір кнопки */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.calculator button:hover {
+  background-color: #CC0000;
+}
+
+.calculator p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+footer {
+  background-color: #333; /* Чорний колір фону нижнього блоку */
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0; /* Вирівнювання внизу */
+  width: 100%;
+}
+
+/* Додайте цей код для адаптивності */
+@media screen and (max-width: 600px) {
+  .calculator {
+    position: static;
+    transform: none;
+    width: 100%; /* Забезпечте 100% ширини на екранах з меншою шириною */
+  }
+
+  .calculator input,
+  .calculator select,
+  .calculator button {
+    width: 100%;
+  }
+}
