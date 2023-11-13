@@ -25,7 +25,7 @@ document.getElementById("calculate").addEventListener("click", function () {
   const sum8 = sum5 * productivity;
 
   const totalNightHours = sum5 + sum6 + sum7 + sum8;
-  const fullHours = sum1 + sum5;
+  const fullHours = hours + nightHours;
 
   const totalPayment = (totalDayHours + totalNightHours).toFixed(2);
   const hoursMoney = (totalPayment / fullHours).toFixed(2);
