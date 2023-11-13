@@ -28,7 +28,7 @@ document.getElementById("calculate").addEventListener("click", function () {
   const fullHours = sum1 + sum5;
 
   const totalPayment = (totalDayHours + totalNightHours).toFixed(2);
-  const hoursMoney = totalPayment / fullHours.toFixed(2);
+  const hoursMoney = (totalPayment / fullHours).toFixed(2);
 
   document.getElementById("result").textContent = totalPayment + " грн";
   document.getElementById("full").textContent = fullHours + " годи";
