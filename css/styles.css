@@ -26,7 +26,7 @@ header h1 {
 }
 
 main {
-  padding: 150px 20px 80px; /* Збільшено верхній та нижній відступ */
+  padding: 150px 20px 80px;
   max-width: 100%;
   box-sizing: border-box;
 }
@@ -94,4 +94,19 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+}
+
+/* Додано код для адаптивності */
+@media screen and (max-width: 600px) {
+  .calculator {
+    position: static;
+    transform: none;
+    width: 100%;
+  }
+
+  .calculator input,
+  .calculator select,
+  .calculator button {
+    width: 100%;
+  }
 }
