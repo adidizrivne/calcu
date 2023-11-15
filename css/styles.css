@@ -36,7 +36,7 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80%;
+  width: 70%; /* Зменшено ширину для більшого простору навколо */
   margin: 0 auto;
   padding: 30px;
   background-color: #333;
