@@ -26,7 +26,7 @@ header h1 {
 }
 
 main {
-  padding: 120px 20px 20px;
+  padding: 150px 20px 80px; /* Збільшено верхній та нижній відступ */
   max-width: 100%;
   box-sizing: border-box;
 }
@@ -36,7 +36,7 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 70%; /* Зменшено ширину для більшого простору навколо */
+  width: 70%;
   margin: 0 auto;
   padding: 30px;
   background-color: #333;
