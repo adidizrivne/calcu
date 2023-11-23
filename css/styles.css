@@ -1,7 +1,7 @@
 /* styles.css */
 
 body {
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #1a1a1a;
@@ -26,8 +26,9 @@ header h1 {
 }
 
 main {
+
   padding: 150px 20px 80px;
-  max-width: 100%;
+  max-width: 80%;
   box-sizing: border-box;
 }
 
@@ -36,8 +37,8 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 70%;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0px 0px 5px 0px;
   padding: 30px;
   background-color: #333;
   border: 2px solid #ff4500;
