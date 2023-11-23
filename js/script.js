@@ -1,5 +1,3 @@
-// script.js
-
 document.getElementById("calculate").addEventListener("click", function () {
   const hours = parseFloat(document.getElementById("hours").value);
   const rank = parseFloat(document.getElementById("rank").value);
@@ -18,7 +16,7 @@ document.getElementById("calculate").addEventListener("click", function () {
   const totalDayHours = sum1 + sum2 + sum3 + sum4;
 
   // Розрахунок для нічних годин
-  const nightRate = hourlyRate * 1.0269;
+  const nightRate = hourlyRate * 1.1210;
   const sum5 = nightHours * nightRate;
   const sum6 = sum5 * rank;
   const sum7 = sum5 * discipline;
@@ -30,13 +28,13 @@ document.getElementById("calculate").addEventListener("click", function () {
   const fullHours = hours + nightHours;
 
   // Загальна заробітна плата
-  const totalPayment = (totalDayHours + totalNightHours).toFixed(2);
+  const totalPayment = totalDayHours + totalNightHours;
 
   // Ціна за годину
-  const hoursMoney = (totalPayment / fullHours).toFixed(2);
+  const hoursMoney = totalPayment / fullHours;
 
   // Оновлення результатів на сторінці
-  document.getElementById("result").textContent = totalPayment + " грн";
-  document.getElementById("full").textContent = fullHours + " годи";
-  document.getElementById("money").textContent = hoursMoney + " грн/год";
+  document.getElementById("result").textContent = totalPayment.toFixed(2) + " грн";
+  document.getElementById("full").textContent = fullHours.toFixed(2) + " годи";
+  document.getElementById("money").textContent = hoursMoney.toFixed(2) + " грн/год";
 });
