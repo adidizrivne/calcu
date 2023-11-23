@@ -16,7 +16,7 @@ document.getElementById("calculate").addEventListener("click", function () {
   const totalDayHours = sum1 + sum2 + sum3 + sum4;
 
   // Розрахунок для нічних годин
-  const nightRate = hourlyRate * 1.1210;
+  const nightRate = hourlyRate * 1.120350174;
   const sum5 = nightHours * nightRate;
   const sum6 = sum5 * rank;
   const sum7 = sum5 * discipline;
